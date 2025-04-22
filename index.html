@@ -3,9 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Register | GPhysics</title>
+  <title>GPhysics: Online Physics Competition</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    function countdown() {
+      const eventDate = new Date('November 1, 2025 00:00:00').getTime();
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      document.getElementById("timer").innerHTML = days > 0 ? days + " days until GPhysics Competition!" : "Competition Started!";
+    }
+    setInterval(countdown, 1000);
+  </script>
 </head>
+
 <body>
   <header>
     <div class="topbar">
@@ -25,9 +36,11 @@
     </div>
   </header>
 
-  <section class="content">
-    <h1>Register for GPhysics!</h1>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdUYhifM-zQ67k3v-zc21DSXAqGKd3dLwj7c_0nApFKbZjwSw/viewform?embedded=true" width="640" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <section class="hero">
+    <h1>GPhysics</h1>
+    <p>An Online Physics Competition for High School Girls</p>
+    <p id="timer"></p>
+    <a href="about.html" class="button">Learn More</a>
   </section>
 
   <footer>
