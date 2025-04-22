@@ -1,69 +1,89 @@
-/* style.css */
+/* style.css for GPhysics */
+
 body {
-  margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: white;
-  color: #222;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #4b0082; /* Dark purple text */
 }
 
-header .topbar {
-  background-color: #003366; /* dark blue */
+.topbar {
+  background: #f8b5d0; /* Soft pink top bar */
   padding: 10px 20px;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 24px;
-}
-
-nav a {
-  color: white;
+.topbar nav a {
   margin: 0 10px;
   text-decoration: none;
+  color: #6b21a8; /* Stronger purple */
   font-weight: bold;
+  transition: color 0.3s;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.topbar nav a:hover {
+  color: #ff66b2; /* Bright pink hover */
 }
 
-section {
-  padding: 40px 20px;
-  max-width: 800px;
+.logo img {
+  height: 50px;
+}
+
+.hero {
+  background: linear-gradient(to right, #d8b4f8, #f8b5d0);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.button {
+  background: #ff66b2;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.button:hover {
+  background: #d63384;
+}
+
+section.content {
+  padding: 60px 20px;
+  max-width: 900px;
   margin: auto;
 }
 
-h2 {
-  color: #003366;
+section.content h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-ul {
-  list-style-type: square;
-  padding-left: 20px;
+section.content p, section.content ul {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 footer {
+  background: #f8b5d0;
   text-align: center;
+  padding: 15px;
   font-size: 14px;
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #f0f0f0;
-}
-
-.socials {
-  margin-top: 20px;
-}
-
-.socials a {
-  color: #003366;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.socials a:hover {
-  text-decoration: underline;
+  color: #4b0082;
 }
