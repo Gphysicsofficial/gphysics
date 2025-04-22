@@ -5,68 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GPhysics: Online Physics Competition</title>
   <link rel="stylesheet" href="style.css">
-</head>
+  <script>
+    // Countdown Timer
+    function countdown() {
+      const eventDate = new Date('November 1, 2025 00:00:00').getTime();
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
+      document.getElementById("timer").innerHTML = days > 0 ? days + " days until GPhysics Competition!" : "Competition Started!";
+    }
+    setInterval(countdown, 1000);
+  </script>
+</head>
 <body>
   <header>
     <div class="topbar">
-      <h1>GPhysics</h1>
+      <div class="logo">
+        <img src="gphysics-logo.png" alt="GPhysics Logo" style="height:50px;">
+      </div>
       <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#competition">Competition</a>
-        <a href="#register">Register</a>
-        <a href="#rules">Rules</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="competition.html">Competition</a>
+        <a href="register.html">Register</a>
+        <a href="rules.html">Rules</a>
+        <a href="team.html">Team</a>
+        <a href="team-a.html">Team A</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section id="home">
-    <h2>Welcome to GPhysics!</h2>
-    <p>A free, online physics competition designed to spark a passion for physics among high school girls worldwide. Through challenging problems and real-world applications, GPhysics offers an exciting and empowering experience.</p>
-  </section>
-
-  <section id="about">
-    <h2>About GPhysics</h2>
-    <p>GPhysics is an initiative founded to inspire high school girls to explore the beauty of physics and scientific thinking. We aim to foster a welcoming and accessible community through competitions, workshops, and collaborative teamwork.</p>
-  </section>
-
-  <section id="competition">
-    <h2>Competition Details</h2>
-    <p><strong>Subject Track:</strong> Classical Mechanics</p>
-    <p><strong>Timeline:</strong> Registration opens August 2025. Competition date: November 2025 (exact date coming soon).</p>
-    <p><strong>Prizes:</strong> Certificates for all participants, awards for top scorers, potential Amazon gift cards and mentorship opportunities depending on sponsorships.</p>
-  </section>
-
-  <section id="register">
-    <h2>Register</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdUYhifM-zQ67k3v-zc21DSXAqGKd3dLwj7c_0nApFKbZjwSw/viewform?embedded=true" width="640" height="1400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-  </section>
-
-  <section id="rules">
-    <h2>Competition Rules</h2>
-    <ul>
-      <li>Participants must be high school girls (grades 9–12) who are U.S. citizens or green card holders.</li>
-      <li>All individual rounds must be completed individually without external assistance.</li>
-      <li>Team rounds encourage collaborative teamwork with registered team members only.</li>
-      <li>Winners must provide a valid shipping address to receive prizes.</li>
-      <li>By registering, participants consent to competition updates via email.</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Questions? Reach out to <a href="mailto:gphysicscomp@gmail.com">gphysicscomp@gmail.com</a>.</p>
-    <div class="socials">
-      <a href="#">Join Our Discord (Coming Soon)</a> |
-      <a href="#">Follow Us on Instagram (Coming Soon)</a>
-    </div>
+  <section class="hero">
+    <h1>GPhysics</h1>
+    <p>An Online Physics Competition for High School Girls</p>
+    <p id="timer"></p>
+    <a href="about.html" class="button">Learn More</a>
   </section>
 
   <footer>
     <p>© 2025 GPhysics. Inspiring the next generation of women physicists.</p>
   </footer>
-
 </body>
 </html>
