@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About | GPhysics</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    function countdown() {
+      const eventDate = new Date('November 1, 2025 00:00:00').getTime();
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      document.getElementById("timer").innerHTML = days > 0 ? days + " days until GPhysics Competition!" : "Competition Started!";
+    }
+    setInterval(countdown, 1000);
+  </script>
 </head>
 <body>
 <header>
@@ -23,6 +33,23 @@
     </nav>
   </div>
 </header>
+
+<section class="hero">
+  <h1>GPhysics</h1>
+  <p>An Online Physics Competition for Middle School Girls</p>
+  <p id="timer"></p>
+  <a href="about.html" class="button">Learn More</a>
+  <a href="register.html" class="button">Register Now</a>
+</section>
+
+<section class="content">
+  <h2>Important Dates</h2>
+  <ul>
+    <li><strong>Registration Opens:</strong> August 2025</li>
+    <li><strong>Workshop Series:</strong> September–October 2025</li>
+    <li><strong>Competition Date:</strong> November 1, 2025</li>
+  </ul>
+</section>
 
 <section class="content">
   <h1>About the Competition</h1>
@@ -51,6 +78,24 @@
   </ul>
 
   <p>GPhysics is a place to experiment, explore, and grow. If you’ve ever wondered what physics is like — or never thought it was for you — this is your chance to jump in.</p>
+</section>
+
+<section class="content">
+  <h2>FAQ</h2>
+  <h3>Who can participate?</h3>
+  <p>Any girl in grades 6–8, anywhere in the world! You just need internet access and a curiosity about how things work.</p>
+
+  <h3>Do I need to be good at physics to join?</h3>
+  <p>Not at all! GPhysics is for everyone — from total beginners to science lovers. If you're curious and willing to try, you belong here.</p>
+
+  <h3>Does it cost anything?</h3>
+  <p>Nope! GPhysics is 100% free to join.</p>
+
+  <h3>What if I don’t have a team?</h3>
+  <p>No problem! You can sign up solo. We'll help match solo participants into teams if they want to join one for the Team Round.</p>
+
+  <h3>How do I prepare?</h3>
+  <p>You can attend our free workshops, check out past problems, and just explore the world around you. Physics is everywhere!</p>
 </section>
 
 <footer>
